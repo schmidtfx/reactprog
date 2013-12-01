@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0m[32mCircuitSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- andGate example[0m[0m
+[0m[[0minfo[0m] [0m[32m- orGate example[0m[0m
+[0m[[0minfo[0m] [0m[32m- orGate2 example[0m[0m
+[0m[[0minfo[0m] [0m[32m- demux base[0m[0m
+[0m[[0minfo[0m] [0m[32m- demux 1to2[0m[0m
+[0m[[0minfo[0m] [0m[32m- demux 2to4[0m[0m
+[0m[[0minfo[0m] [0m[31m- circuit *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  GeneratorDrivenPropertyCheckFailedException was thrown during property evaluation.[0m[0m
+[0m[[0minfo[0m] [0m[31m (CircuitSuite.scala:124)[0m[0m
+[0m[[0minfo[0m] [0m[31m  Falsified after 0 successful property evaluations.[0m[0m
+[0m[[0minfo[0m] [0m[31m  Location: (CircuitSuite.scala:124)[0m[0m
+[0m[[0minfo[0m] [0m[31m  Occurred when passed generated values ([0m[0m
+[0m[[0minfo[0m] [0m[31m    arg0 = true,[0m[0m
+[0m[[0minfo[0m] [0m[31m    arg1 = true[0m[0m
+[0m[[0minfo[0m] [0m[31m  )[0m[0m

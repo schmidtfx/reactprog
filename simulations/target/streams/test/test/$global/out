@@ -1,0 +1,10 @@
+[0m[[0mdebug[0m] [0mRunning Test simulations.CircuitSuite : subclass(false, org.scalatest.Suite) with arguments [0m
+[0m[[0mdebug[0m] [0mRunning Test simulations.QuickCircuit : subclass(true, org.scalacheck.Properties) with arguments [0m
+[0m[[0mdebug[0m] [0mRunning Test simulations.EpidemySuite : subclass(false, org.scalatest.Suite) with arguments [0m
+[0m[[31merror[0m] [0mFailed: : Total 18, Failed 3, Errors 0, Passed 15, Skipped 0[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	simulations.EpidemySuite[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	simulations.QuickCircuit[0m
+[0m[[31merror[0m] [0m	simulations.CircuitSuite[0m
+[0m[[31merror[0m] [0m(assignment/test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

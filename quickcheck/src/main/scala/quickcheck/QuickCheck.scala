@@ -20,7 +20,7 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
   }
 
   property("gen2") = forAll { (a: Int, b: Int) =>
-    findMin(insert(b, insert(a, empty))) == Math.min(a, b)
+    findMin(insert(b, insert(a, empty))) == (a min b)
   }
 
   property("del1") = forAll { a: Int =>
@@ -34,15 +34,11 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
 
   property("comb1") = forAll { (h: H, other: H) =>
     val newH = meld(h, other)
-    findMin(newH) == Math.min(findMin(h), findMin(other))
+    findMin(newH) == (findMin(h) min findMin(other))
   }
   
   property("comb2") = forAll { (h: H, other: H) =>
-    val melded1 = meld(h, other)
-    val melded1_l = delMinAndCheck(melded1)
-    val melded2 = meld(deleteMin(h), insert(findMin(h), other))
-    val melded2_l = delMinAndCheck(melded2)
-    melded1_l == melded2_l
+    delMinAndCheck(meld(h, other)) == delMinAndCheck(meld(deleteMin(h), insert(findMin(h), other)))
   }
 
   private def delMinAndCheck(h: H): List[A] = {
