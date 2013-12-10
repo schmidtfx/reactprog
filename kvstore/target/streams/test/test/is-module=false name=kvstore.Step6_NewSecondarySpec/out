@@ -1,0 +1,40 @@
+[0m[[0minfo[0m] [0m[32mStep6_NewSecondarySpec:[0m[0m
+[0m[[0minfo[0m] [0m[31m- case1: Primary must start replication to new replicas *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Join[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:179)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:327)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:314)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:707)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$1.apply$mcV$sp(Step6_NewSecondarySpec.scala:30)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$1.apply(Step6_NewSecondarySpec.scala:24)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$1.apply(Step6_NewSecondarySpec.scala:24)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Suite$class.withFixture(Suite.scala:1974)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec.withFixture(Step6_NewSecondarySpec.scala:13)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- case2: Primary must stop replication to removed replicas and stop Replicator *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Join[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:179)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:327)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:314)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:707)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$2.apply$mcV$sp(Step6_NewSecondarySpec.scala:56)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$2.apply(Step6_NewSecondarySpec.scala:50)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$2.apply(Step6_NewSecondarySpec.scala:50)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Suite$class.withFixture(Suite.scala:1974)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec.withFixture(Step6_NewSecondarySpec.scala:13)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- case3: Primary must stop replication to removed replicas and waive their outstanding acknowledgements *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Join[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:179)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:327)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:314)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:707)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$3.apply$mcV$sp(Step6_NewSecondarySpec.scala:77)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$3.apply(Step6_NewSecondarySpec.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$3.apply(Step6_NewSecondarySpec.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Suite$class.withFixture(Suite.scala:1974)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at kvstore.Step6_NewSecondarySpec.withFixture(Step6_NewSecondarySpec.scala:13)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
