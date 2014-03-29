@@ -32,3 +32,17 @@ quickcheck/target/scala-2.10/cache/assignment/compile/for_packageSubmission/outp
 quickcheck/target/scala-2.10/cache/assignment/compile/inc_compile
 
 quickcheck/target/scala-2.10/cache/assignment/global/update/output
+
+*.class
+*.log
+
+# sbt specific
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
