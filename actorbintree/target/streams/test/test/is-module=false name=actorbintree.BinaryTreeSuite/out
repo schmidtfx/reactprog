@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0m[32mBinaryTreeSuite:[0m[0m
+[0m[[0minfo[0m] [0m[31m- proper inserts and lookups *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for ContainsResult(1,false)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:179)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:327)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:314)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:707)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$1.apply$mcV$sp(BinaryTreeSuite.scala:53)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$1.apply(BinaryTreeSuite.scala:49)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$1.apply(BinaryTreeSuite.scala:49)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Suite$class.withFixture(Suite.scala:1974)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actorbintree.BinaryTreeSuite.withFixture(BinaryTreeSuite.scala:15)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- instruction example *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  failure to receive confirmation 1/6[0m[0m
+[0m[[0minfo[0m] [0m[31mRequests:[0m[0m
+[0m[[0minfo[0m] [0m[31m    Insert(Actor[akka://PostponeSpec/system/testActor2#930184661],100,1)[0m[0m
+[0m[[0minfo[0m] [0m[31m     Contains(Actor[akka://PostponeSpec/system/testActor2#930184661],50,2)[0m[0m
+[0m[[0minfo[0m] [0m[31m     Remove(Actor[akka://PostponeSpec/system/testActor2#930184661],10,1)[0m[0m
+[0m[[0minfo[0m] [0m[31m     Insert(Actor[akka://PostponeSpec/system/testActor2#930184661],20,2)[0m[0m
+[0m[[0minfo[0m] [0m[31m     Contains(Actor[akka://PostponeSpec/system/testActor2#930184661],80,1)[0m[0m
+[0m[[0minfo[0m] [0m[31m     Contains(Actor[akka://PostponeSpec/system/testActor2#930184661],70,2) (BinaryTreeSuite.scala:30)[0m[0m
+[0m[[0minfo[0m] [0m[31m- behave identically to built-in set (includes GC) *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  failure to receive confirmation 1/1000 (BinaryTreeSuite.scala:29)[0m[0m
